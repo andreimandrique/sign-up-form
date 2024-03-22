@@ -1,0 +1,74 @@
+@font-face{
+    font-family: "norse-bold";
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+:root{
+    --main-black: #1F2937;
+    --complementary-white: #F7F7FF;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-container{
+    background: url(./images/tarot-card-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+    position: relative;
+}
+.black-container{
+    margin-top: 6rem;
+    background-color: var(--main-black);
+    opacity: 0.6;
+    display: flex;
+    height: min(4rem, 8rem);
+}
+.logo-container{
+    top: 6rem;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.logo-img{
+    width: 4rem;
+    height: 4rem;
+}
+.logo-text{
+    font-family: "norse-bold";
+    font-size: 4rem;
+    color: white;
+}
+.img-container > div > p{
+    bottom: 0;
+    color: white;
+    position: absolute;
+}
+
+
+.form-container{
+    max-height: 100vh;
+    width: 60vw;
+}
+.text-container{
+    padding: 4rem 2rem 1rem 2rem;
+    background-color: var(--complementary-white);   
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.row > div{
+    margin-top: 1rem;
+}
