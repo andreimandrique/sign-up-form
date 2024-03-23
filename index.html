@@ -8,7 +8,6 @@
 </head>
 <body>
     <main>
-
         <div class="img-container">
             <div class="black-container"></div>
             <div class="logo-container">
@@ -19,49 +18,50 @@
                 <p>Photo by Petr Sidorov in Uplash</p>
             </div>
         </div>
-
         <div class="form-container">
             <div class="text-container">
                 <h3> Unveil your destiny with a personalized tarot reading. Sign up today and connect with gifted readers on our user-friendly website.</h3>
             </div>
-
-            <h4>Let's do this</h4>
-
-            <form action="" method="post">
-                <div class="row">
+            <h3>Let's do this !</h3>
+            <form action="">
+                <div class="form-row">
                     <div>
-                        <label for="">First Name</label><br>
-                        <input type="text" required>
+                        <label for="firstName">FIRST NAME</label><br>
+                        <input type="text" name="first_name" id="firstName" required>
                     </div>
                     <div>
-                        <label for="">Last Name</label><br>
-                        <input type="text" required>
+                        <label for="lastName">LAST NAME</label><br>
+                        <input type="text" name="last_name" id="lastName" required>
                     </div>
                 </div>
-                <div class="row">
+                <div class="form-row">
                     <div>
-                        <label for="">Email</label><br>
-                        <input type="email">
+                        <label for="email">EMAIL</label><br>
+                        <input type="email" name="email" id="email" required pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
                     </div>
                     <div>
-                        <label for="">Number</label><br>
-                        <input type="number">
-                    </div>
-                </div>
-                <div class="row">
-                    <div>
-                        <label for="">Password</label><br>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="">Confirm Password</label><br>
-                        <input type="text">
+                        <label for="number">NUMBER</label><br>
+                        <input type="number" name="number" id="number" minlength="9" required>
                     </div>
                 </div>
-                <input type="submit" value="Submit">
+                <div class="form-row">
+                    <div>
+                        <label for="password">PASSWORD</label><br>
+                        <input type="text" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">CONFIRM PASSWORD</label><br>
+                        <input type="text" name="confirm_password" id="confirmPassword" required>
+                    </div>
+                </div>
+                <hr>
+                <div class="btn-container">
+                    <input type="submit" value="Create a Account" class="btn">
+                    <p>Already have an account? <a href="">Log In</a></p>
+                </div>
             </form>
+
         </div>
-        
     </main>
 </body>
 </html>
