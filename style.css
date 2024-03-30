@@ -83,11 +83,12 @@ input{
     outline: 0;
     border: 1px solid black;
 }
+input[type=text]:valid , input[type=password]:valid,
+input[type=number]:valid, input[type=email]:valid{
+   outline: 1px solid blue;
+}
 input[type="submit"]:valid{
     border: 1px solid black;
-}
-input:valid{
-   outline: 1px solid blue;
 }
 input:invalid{
     border: 1px solid red;
