@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-        <div class="img-container">
-            <div class="black-container"></div>
-            <div class="logo-container">
-                <img src="./images/odin-lined.png" alt="" class="logo-img">
-                <h3 class="logo-text">Odin</h3>
+      <div class="img-container">
+        <div class="black-container"></div>
+        <div class="logo-container">
+          <img src="./images/odin-lined.png" alt="" class="logo-img" />
+          <h3 class="logo-text">Odin</h3>
+        </div>
+        <div>
+          <p>Photo by Petr Sidorov in Uplash</p>
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="text-container">
+          <h3>
+            Unveil your destiny with a personalized tarot reading. Sign up today
+            and connect with gifted readers on our user-friendly website.
+          </h3>
+        </div>
+        <h3>Let's do this !</h3>
+        <form action="">
+          <div class="form-row">
+            <div>
+              <label for="firstName"><span>*</span>FIRST NAME</label><br />
+              <input type="text" name="first_name" id="firstName" required />
             </div>
             <div>
-                <p>Photo by Petr Sidorov in Uplash</p>
+              <label for="lastName"><span>*</span>LAST NAME</label><br />
+              <input type="text" name="last_name" id="lastName" required />
             </div>
-        </div>
-        <div class="form-container">
-            <div class="text-container">
-                <h3> Unveil your destiny with a personalized tarot reading. Sign up today and connect with gifted readers on our user-friendly website.</h3>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="email"><span>*</span>EMAIL</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              />
             </div>
-            <h3>Let's do this !</h3>
-            <form action="">
-                <div class="form-row">
-                    <div>
-                        <label for="firstName">FIRST NAME</label><br>
-                        <input type="text" name="first_name" id="firstName" required>
-                    </div>
-                    <div>
-                        <label for="lastName">LAST NAME</label><br>
-                        <input type="text" name="last_name" id="lastName" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div>
-                        <label for="email">EMAIL</label><br>
-                        <input type="email" name="email" id="email" required pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
-                    </div>
-                    <div>
-                        <label for="number">NUMBER</label><br>
-                        <input type="number" name="number" id="number" minlength="9" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div>
-                        <label for="password">PASSWORD</label><br>
-                        <input type="text" name="password" id="password" required>
-                    </div>
-                    <div>
-                        <label for="confirmPassword">CONFIRM PASSWORD</label><br>
-                        <input type="text" name="confirm_password" id="confirmPassword" required>
-                    </div>
-                </div>
-                <hr>
-                <div class="btn-container">
-                    <input type="submit" value="Create a Account" class="btn">
-                    <p>Already have an account? <a href="">Log In</a></p>
-                </div>
-            </form>
-
-        </div>
+            <div>
+              <label for="number"><span>*</span>NUMBER</label><br />
+              <input
+                type="number"
+                name="number"
+                id="number"
+                minlength="9"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="password"><span>*</span>PASSWORD</label><br />
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div>
+              <label for="confirmPassword"><span>*</span>CONFIRM PASSWORD</label><br />
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirmPassword"
+                required
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="btn-container">
+            <input type="submit" value="Create a Account" class="btn" />
+            <p>Already have an account? <a href="">Log In</a></p>
+          </div>
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>
