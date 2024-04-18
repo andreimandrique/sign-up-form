@@ -85,16 +85,16 @@ input{
 }
 input[type=text]:valid , input[type=password]:valid,
 input[type=number]:valid, input[type=email]:valid{
-   outline: 1px solid hsl(240, 100%, 50%);
+   outline: 1px solid blue;
 }
 input[type="submit"]:valid{
     border: 1px solid black;
 }
-input:invalid{
+/* input:invalid{
     border: 1px solid red;
-}
+} */
 input:focus{
-    border: 1px solid greenyellow;
+    border: 1px solid blue;
 }
 hr{
     height: 1px; 
