@@ -85,7 +85,7 @@ input{
 }
 input[type=text]:valid , input[type=password]:valid,
 input[type=number]:valid, input[type=email]:valid{
-   outline: 1px solid blue;
+   outline: 1px solid hsl(240, 100%, 50%);
 }
 input[type="submit"]:valid{
     border: 1px solid black;
